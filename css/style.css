@@ -1,143 +1,264 @@
 /* Elements HTML class -------------------------------------------------------- */
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
 }
 
 body{
+    width: 100%;
+    margin: 0 auto;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #E9ECF8;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header, main{
-    justify-content: space-between;
 }
 
 main{
-    height: 80vh;
-    max-width: 1440px;
+    width: 95%;
     margin: 10px auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header, footer{
     width: 100%;
-    padding: 15px 0 ;
-    align-items: center;
     background-color: #ADB5BD;
+    padding: 5px 5px;
 }
 
 footer{
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: auto;
 }
+
+textarea{
+    color: #0A3871;
+}
+
 
 /* Configuration class -------------------------------------------------------- */
-.center{
-    text-align: center;
-}
-
-.height-85{
-    height: 85%;
-}
-
-.flex-container{
-    display: flex;
-}
-
-.btn{
-    text-align: center;
-    width: 500px;
-    height: 67px;
-    border: 1px solid #0A3871;
-    border-radius: 30px;
-    margin: 10px;
-}
-
-/* Style class ---------------------------------------------------------------- */
-.brand-header{
-    margin-right: 30px;
-}
-.display-container{
-    width: 30%;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-}
-
-.empty-message-img, .empty-message1, .empty-message2{
-    margin: 25px 0;
-}
-
-.empty-message-img{
-    width: 80%;
-}
-
-.empty-message1{
-    font-size: 24px;
-    color: #343A40;
-}
-
-.empty-message2{
-    font-size: 16px;
-    color: #495057;
-}
-
-.input-container{
-    margin-right: 20px;
-    width: 80%;
-    height: 100%;
-}
-
-.input-user{
-    width: 100%;
-    max-height: 65vh;
-    background-color: transparent;
-    color: #0A3871;
-    font-size: 32px;
-    padding: 20px;
-    resize: none;
-    border: none;
-    outline: none;
-}
-
-.info-message{
-    color: #495057;
-    margin: 5px 5px 5px 0;
-}
-
-.icon{
-    width: 16px;
-}
-
-.btn-container{
-    justify-content: space-evenly;
-}
-
-.btn-in{
+.btn-blue{
     color: #FFFFFF;
     background-color: #0A3871;
 }
 
-.btn-out{
+.btn-grey{
     color: #0A3871;
-    background-color: #E9ECF8;
+    background-color: #DEE1E4;
 }
 
-.btn-copy{
-    width: 300px;
-    height: 67px;
+.icon-16{
+    width: 16px;
+}
+
+.icon-32{
+    width: 32px;
+    margin: 0 20px
+}
+
+/* Style class ---------------------------------------------------------------- */
+.brand-text-large, .brand-text-short{
+    font-weight: 700;
+}
+
+.brand-text-large{
+    display: none;
+}
+
+/* .input-container p{
+    margin: 5px;
+} */
+
+.user-message{
+    width: 98%;
+    padding: 15px;
+    font-size: 28px;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn{
+    width: 80%;
+    max-width: 80%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
     border: 1px solid #0A3871;
     border-radius: 30px;
 }
 
-.social-media{
-    width: 32px;
-    margin: 0 50px
+.img-message{
+    display: none;
 }
 
-.attribute{
-    font-size: 8px;
-    margin-right: 30px;
+.container-btn-encript{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.display-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #ADB5BD;
+
+}
+
+.display-container p, .input-container p{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.empty-message1{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+::placeholder{
+    font-weight: 500;
+    color: #0A3871;
+}
+
+/* Media Querys --------------------------------------------------------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .brand-text-short{
+        display: none;
+    }
+
+    .brand-text-large{
+        display: block;
+    }
+
+    .container-btn-encript{
+        flex-direction: row;
+    }
+
+    .container-btn-encript button{
+        margin: 10px;
+    }
+
+    .display-container {
+        width: 100%;
+    }
+
+    .display-container button{
+        width: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    main{
+        width: 70%;
+        margin: 0 auto; 
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .i-attribute{
+        font-size:small;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    main{
+        width: 80%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 10px 20px;
+    }
+
+    .input-container p{
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .container-btn-encript{
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .display-container{
+        width: 40%;
+        margin: 10px 20px;
+    }
+
+    .img-message{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .btn-copy{
+      margin-top: auto;
+      margin-bottom: 10px;
+    }
+
+    ::placeholder{
+        font-weight: 600;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    textarea:focus::placeholder{
+        font-weight: 400;
+        color: #676C71;
+        -webkit-text-stroke: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    main {
+        width: 70%; 
+    }
+
+    .input-container{
+        width: 70%;
+    }
+
+    .display-container{
+        width: 30%;
+    }
+
 }

@@ -4,49 +4,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="./css/reset.css"> -->
         <link rel="stylesheet" href="./css/style.css">
         <script defer src="./js/script.js"></script>
         <title>Text Encryptor</title>
     </head>
     <body>
-        <header class="flex-container">
-            <h1><img src="./img/logo.svg" alt="Alura Latam Logo"></h1>
-            <p class="brand-header">Alura Latam Oracle Next Education Challenge - Text Encryptor</p>
+        <header>
+            <h1><img src="./img/logo.png" alt="Alura Latam Logo"></h1>
+            <p class="brand-text-large">Alura Latam Oracle Next Education - Text Encryptor</p>
+            <p class="brand-text-short">Text Encryptor</p>
         </header>
 
-        <main class="flex-container">
+        <main>
             <section class="input-container">
-                <div>
-                    <textarea class="input-user" name="user-message" id="user-message" cols="30" rows="20" placeholder="Enter the text here"></textarea>
-                </div>
-                <p class="info-message"> <img class="icon" src="./img/exclamation.png" alt="exclamation logo">  Only lowercase letters and no accents</p>
-                <div class="btn-container flex-container">
-                    <button class="btn btn-in">Encrypt</button>
-                    <button class="btn btn-out">Decrypt</button>
+                <textarea class="user-message" name="user-message" id="user-message" rows="10" placeholder="Enter the text here"></textarea>
+                <p><img class="icon-16" src="./img/exclamation.png" alt="exclamation logo">  Only lowercase letters and no accents</p>
+                <div class="container-btn-encript">
+                    <button class="btn btn-blue">Encrypt</button>
+                    <button class="btn btn-grey">Decrypt</button>
                 </div>
             </section>
 
             <section class="display-container">
-                <div class="height-85">
-                    <img class="empty-message-img" src="./img/empty_message.svg" alt="Girl with Diamond awaiting message">
-                    <p class="empty-message1">No message was found</p>
-                    <p class="empty-message2">Enter the text you want to encrypt or decrypt</p>
-                </div>
-                <button class="btn-copy btn-out">Copy</button>
+                <img class="img-message" src="./img/empty_message.svg" alt="Girl with Diamond awaiting message">
+                <p class="empty-message1">No message was found</p>
+                <p class="empty-message2">Enter the text you want to encrypt or decrypt</p>
+                <button class="btn btn-grey btn-copy">Copy</button>
             </section>
         </main>
 
-        <footer class="flex-container">
-            <div class="flex-container">
-                <a href="https://github.com/matias-estanqueiro" target="_blank"><img class="social-media" src="./img/github-sign.png" alt="Github Logo"></a>
-                <a href="https://www.linkedin.com/in/matias-afonso-estanqueiro/" target="_blank"><img class="social-media" src="./img/linkedin-sign.png" alt="Linkedin Logo"></a>
+        <footer>
+            <div class="social-media">
+                <a href="https://github.com/matias-estanqueiro" target="_blank"><img class="icon-32" src="./img/github-sign.png" alt="Github Logo"></a>
+                <a href="https://www.linkedin.com/in/matias-afonso-estanqueiro/" target="_blank"><img class="icon-32" src="./img/linkedin-sign.png" alt="Linkedin Logo"></a>
             </div>
             <p>Developed by: Matias Afonso Estanqueiro</p>
-            <div>
-                <a class="attribute" href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
-                <a class="attribute" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Dave Gandy - Flaticon</a>
-            </div>
+            <a class="i-attribute" href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+            <a class="i-attribute" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Dave Gandy - Flaticon</a>
         </footer>
     </body>
 </html>
