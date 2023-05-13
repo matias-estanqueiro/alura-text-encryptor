@@ -7,10 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="./css/reset.css"> -->
         <link rel="stylesheet" href="./css/style.css">
         <script defer src="./js/script.js"></script>
-        <title>Text Encryptor</title>
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+        <title>ALURA ONE - Text Encryptor</title>
     </head>
     <body>
         <header>
@@ -24,15 +26,16 @@
                 <textarea class="user-message" name="user-message" id="user-message" rows="10" placeholder="Enter the text here"></textarea>
                 <p><img class="icon-16" src="./img/exclamation.png" alt="exclamation logo">  Only lowercase letters and no accents</p>
                 <div class="container-btn-encript">
-                    <button class="btn btn-blue">Encrypt</button>
+                    <button class="btn btn-blue" onclick="encriptButton()">Encrypt</button>
                     <button class="btn btn-grey">Decrypt</button>
                 </div>
             </section>
 
             <section class="display-container">
-                <img class="img-message" src="./img/empty_message.svg" alt="Girl with Diamond awaiting message">
-                <p class="empty-message1">No message was found</p>
-                <p class="empty-message2">Enter the text you want to encrypt or decrypt</p>
+                <p id="display-message"></p>
+                <img id="img-empty" class="img-message" src="./img/empty_message.svg" alt="Girl with Diamond awaiting message">
+                <p id="message1-empty" class="empty-message1">No message was found</p>
+                <p id="message2-empty" class="empty-message2">Enter the text you want to encrypt or decrypt</p>
                 <button class="btn btn-grey btn-copy">Copy</button>
             </section>
         </main>
@@ -46,5 +49,7 @@
             <a class="i-attribute" href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
             <a class="i-attribute" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Dave Gandy - Flaticon</a>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>
