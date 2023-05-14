@@ -25,9 +25,10 @@
             <section class="input-container">
                 <textarea class="user-message" name="user-message" id="user-message" rows="10" placeholder="Enter the text here"></textarea>
                 <p><img class="icon-16" src="./img/exclamation.png" alt="exclamation logo">  Only lowercase letters and no accents</p>
-                <div class="container-btn-encript">
-                    <button class="btn btn-blue" onclick="encriptButton()">Encrypt</button>
-                    <button class="btn btn-grey">Decrypt</button>
+                <div class="container-btn-encrypt">
+                    <button class="btn btn-blue" onclick="encryptButton()">Encrypt</button>
+                    <button class="btn btn-grey" onclick="decryptButton()">Decrypt</button>
+                    <button class="btn btn-grey" onclick="clearButton()">Clear</button>
                 </div>
             </section>
 
@@ -36,7 +37,7 @@
                 <img id="img-empty" class="img-message" src="./img/empty_message.svg" alt="Girl with Diamond awaiting message">
                 <p id="message1-empty" class="empty-message1">No message was found</p>
                 <p id="message2-empty" class="empty-message2">Enter the text you want to encrypt or decrypt</p>
-                <button class="btn btn-grey btn-copy">Copy</button>
+                <button class="btn btn-grey btn-copy" onclick="copyButton()">Copy</button>
             </section>
         </main>
 

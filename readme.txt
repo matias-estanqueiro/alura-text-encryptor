@@ -20,7 +20,11 @@ Technologies:
     - JavaScript
 
 Versions:
-    - v1.0.0    red-turtle
-        - Release notes: 1st version of the app
+    - v1.0.0    blue-panther
+        - Release notes: 
+            * 1st version of the app
+            * Responsive
+            * Buttons: Encrypt, Decrypt, Copy encrypt message, Clear screen
+            
 
 Welcome to my educational project! This is the 1st challenge of the program!

@@ -106,7 +106,7 @@ textarea{
     display: none;
 }
 
-.container-btn-encript{
+.container-btn-encrypt{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -165,11 +165,11 @@ textarea{
         display: block;
     }
 
-    .container-btn-encript{
+    .container-btn-encrypt{
         flex-direction: row;
     }
 
-    .container-btn-encript button{
+    .container-btn-encrypt button{
         margin: 10px;
     }
 
@@ -230,7 +230,7 @@ textarea{
         margin-bottom: 10px;
     }
 
-    .container-btn-encript{
+    .container-btn-encrypt{
         margin-top: auto;
         margin-bottom: 10px;
     }
