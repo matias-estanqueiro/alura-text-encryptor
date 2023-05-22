@@ -1,6 +1,9 @@
+Welcome to my educational project! This is the 1st challenge of the program!
+
 Alura Latam - Oracle
 Program: ONE - Oracle Next Education
 Beginner in Programming G5
+
 
 Function:
     - Text encrypter/ decryptor. The encryption "keys" used are:
@@ -27,4 +30,3 @@ Versions:
             * Buttons: Encrypt, Decrypt, Copy encrypt message, Clear screen
             
 
-Welcome to my educational project! This is the 1st challenge of the program!
